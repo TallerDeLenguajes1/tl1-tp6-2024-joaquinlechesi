@@ -491,3 +491,8 @@ iOSInjectionProject/
 
 # End of https://www.toptal.com/developers/gitignore/api/dotnetcore
 # End of https://www.toptal.com/developers/gitignore/api/csharp,visualstudiocode,objective-c
+
+### DotnetCore ###
+# .NET Core build folders
+/bin
+/obj                    
