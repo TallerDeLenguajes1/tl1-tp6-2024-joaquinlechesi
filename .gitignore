@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/csharp,visualstudiocode,objective-c
-# Edit at https://www.toptal.com/developers/gitignore?templates=csharp,visualstudiocode,objective-c
+# Created by https://www.toptal.com/developers/gitignore/api/csharp,objective-c,visualstudiocode,dotnetcore
+# Edit at https://www.toptal.com/developers/gitignore?templates=csharp,objective-c,visualstudiocode,dotnetcore
 
 ### Csharp ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -399,6 +399,15 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
+### DotnetCore ###
+# .NET Core build folders
+/bin
+/obj
+
+# Common node modules locations
+/node_modules
+/wwwroot/node_modules
+
 ### Objective-C ###
 # Xcode
 #
@@ -477,22 +486,5 @@ iOSInjectionProject/
 # Ignore all local history of files
 .history
 .ionide
-# Created by https://www.toptal.com/developers/gitignore/api/dotnetcore
-# Edit at https://www.toptal.com/developers/gitignore?templates=dotnetcore
 
-### DotnetCore ###
-# .NET Core build folders
-/bin
-/obj                    
-
-# Common node modules locations
-/node_modules
-/wwwroot/node_modules
-
-# End of https://www.toptal.com/developers/gitignore/api/dotnetcore
-# End of https://www.toptal.com/developers/gitignore/api/csharp,visualstudiocode,objective-c
-
-### DotnetCore ###
-# .NET Core build folders
-/bin
-/obj                    
+# End of https://www.toptal.com/developers/gitignore/api/csharp,objective-c,visualstudiocode,dotnetcore
