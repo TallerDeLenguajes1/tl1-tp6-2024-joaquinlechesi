@@ -1,8 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Binvenido a la CalculadoraV2");
 
-string opcion;
-int opcionInt;
+string opcion, numero;
+int opcionInt, numeroInt;
 
 do
 {
@@ -12,16 +12,36 @@ do
     switch (opcionInt)
     {
         case 1:
+        Console.WriteLine("Ingrese un numero entero:");
+        numero = Console.ReadLine();
+        int salida;
+        int.TryParse(numero, out numeroInt);
+        
+        //uint salida;
+        //uint.TryParse(numero, out salida);
+        //Int32.TryParse(numero, out numeroInt);
+        salida = Math.Abs(numeroInt);
+        Console.WriteLine("El valor absoluto del numero ingresado es: " + salida);
             break;
         case 2:
+        numero = Console.ReadLine();
+        int.TryParse(numero, out numeroInt);
             break;
         case 3:
+        numero = Console.ReadLine();
+        int.TryParse(numero, out numeroInt);
             break;
         case 4:
+        numero = Console.ReadLine();
+        int.TryParse(numero, out numeroInt);
             break;
         case 5:
+        numero = Console.ReadLine();
+        int.TryParse(numero, out numeroInt);
             break;
         case 6:
+        numero = Console.ReadLine();
+        int.TryParse(numero, out numeroInt);
             break;
         default:
             break;
