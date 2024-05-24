@@ -14,14 +14,14 @@ do
         case 1:
         Console.WriteLine("Ingrese un numero entero:");
         numero = Console.ReadLine();
-        int salida;
+        int salidaValorAbsoluto;
         int.TryParse(numero, out numeroInt);
         
         //uint salida;
         //uint.TryParse(numero, out salida);
         //Int32.TryParse(numero, out numeroInt);
-        salida = Math.Abs(numeroInt);
-        Console.WriteLine("El valor absoluto del numero ingresado es: " + salida);
+        salidaValorAbsoluto = Math.Abs(numeroInt);
+        Console.WriteLine("El valor absoluto del numero ingresado es: " + salidaValorAbsoluto);
             break;
         case 2:
         Console.WriteLine("Ingrese un numero entero:");
@@ -31,8 +31,18 @@ do
         Console.WriteLine("El cuadrado del numero igresado es: " + numeroInt);
             break;
         case 3:
+        Console.WriteLine("Ingrese un numero entero:");
         numero = Console.ReadLine();
         int.TryParse(numero, out numeroInt);
+        if (numeroInt > 0)
+        {
+            double salidaRaiz;
+            salidaRaiz = Math.Sqrt(numeroInt);
+            Console.WriteLine("La raiz cuadrada del numero ingresado es: " + salidaRaiz);
+        }else
+        {
+            Console.WriteLine("El numero ingresado es negativo:");
+        }
             break;
         case 4:
         numero = Console.ReadLine();
