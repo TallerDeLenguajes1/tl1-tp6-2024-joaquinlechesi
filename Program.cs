@@ -24,8 +24,11 @@ do
         Console.WriteLine("El valor absoluto del numero ingresado es: " + salida);
             break;
         case 2:
+        Console.WriteLine("Ingrese un numero entero:");
         numero = Console.ReadLine();
         int.TryParse(numero, out numeroInt);
+        numeroInt = numeroInt * numeroInt;
+        Console.WriteLine("El cuadrado del numero igresado es: " + numeroInt);
             break;
         case 3:
         numero = Console.ReadLine();
