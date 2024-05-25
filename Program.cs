@@ -45,16 +45,29 @@ do
         }
             break;
         case 4:
+        Console.WriteLine("Ingrese un numero entero:");
         numero = Console.ReadLine();
         int.TryParse(numero, out numeroInt);
+        double salidaSeno;
+        salidaSeno = Math.Sin(numeroInt);
+        Console.WriteLine("El SENO del numero ingresado es: " + salidaSeno);
             break;
         case 5:
+        Console.WriteLine("Ingrese un numero entero:");
         numero = Console.ReadLine();
         int.TryParse(numero, out numeroInt);
+        double salidaCoseno;
+        salidaCoseno = Math.Cos(numeroInt);
+        Console.WriteLine("El COSENO del numero ingresado es: " + salidaCoseno);
             break;
         case 6:
+        Console.WriteLine("Ingrese un numero real:"); //funciona ingresando numero reales con ","
         numero = Console.ReadLine();
-        int.TryParse(numero, out numeroInt);
+        double numeroDouble;
+        //int.TryParse(numero, out numeroInt);
+        double.TryParse(numero, out numeroDouble);
+        numeroInt = (int)numeroDouble;
+        Console.WriteLine("La parte entera del numero real ingresado es: " + numeroInt);
             break;
         default:
             break;
