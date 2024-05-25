@@ -63,9 +63,13 @@ do
                 Console.WriteLine("El primer numero es menor que el segundo numero, no es posible realizar la operacion DIVICION.");
             }else
             {
-                resultado = numero1 / numero2;
-                Console.WriteLine("El resultado es: " + resultado);
+                double resultadoDivicion;
+                resultadoDivicion = (double)numero1 / numero2;
+                Console.WriteLine("El resultado es: " + resultadoDivicion);
             }
+            break;
+        default:
+            Console.WriteLine("El numero ingresado no perntence a una operacion.");
             break;
     }
     Console.WriteLine("Desea realizar otra operacion? Ingrese 0 para NO, 1 para SI");
