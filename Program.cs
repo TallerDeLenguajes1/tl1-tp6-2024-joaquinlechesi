@@ -2,30 +2,31 @@
 Console.WriteLine("Binvenido a la CalculadoraV2");
 
 string numero;
-int numeroInt, resultadoEntero;
-double resultadoReal;
+int  resultadoEntero;
+double numeroReal, resultadoReal;
 
-Console.WriteLine("Ingrese un numero entero:");
+Console.WriteLine("Ingrese un numero:");
 numero = Console.ReadLine();
-int.TryParse(numero, out numeroInt);
-resultadoEntero = Math.Abs(numeroInt);
-Console.WriteLine("El VALOR ABSOLUTO del numero ingresado es: " + resultadoEntero);
-resultadoEntero = numeroInt * numeroInt;
-Console.WriteLine("El CUADRADO del numero ingresado: " + resultadoEntero);
-if (numeroInt >= 0)
+//int.TryParse(numero, out numeroInt);
+double.TryParse(numero, out numeroReal);
+resultadoReal = Math.Abs(numeroReal);
+Console.WriteLine("El VALOR ABSOLUTO del numero ingresado es: " + resultadoReal);
+resultadoReal = numeroReal * numeroReal;
+Console.WriteLine("El CUADRADO del numero ingresado: " + resultadoReal);
+if (numeroReal >= 0)
 {
-    resultadoReal = Math.Sqrt(numeroInt);
+    resultadoReal = Math.Sqrt(numeroReal);
     Console.WriteLine("La RAIZ CUADRADA del numero ingresado es: " + resultadoReal);
 }else
 {
     Console.WriteLine("El numero ingresado es menor a 0, no es posible calcular su RAIZ CUADRADA.");
 }
-resultadoReal = Math.Sin(numeroInt);
+resultadoReal = Math.Sin(numeroReal);
 Console.WriteLine("El SENO del numero ingresado es: " + resultadoReal);
-resultadoReal = Math.Cos(numeroInt);
+resultadoReal = Math.Cos(numeroReal);
 Console.WriteLine("El COSENO del numero ingresado es: " + resultadoReal);
-resultadoEntero = (int)resultadoReal;
-Console.WriteLine("La PARTE REAL de el numero ingresado es: " + resultadoEntero);
+resultadoEntero = (int)numeroReal;
+Console.WriteLine("La PARTE ENTERA de el numero ingresado es: " + resultadoEntero);
 
 // do
 // {
