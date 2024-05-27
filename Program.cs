@@ -2,7 +2,7 @@
 Console.WriteLine("Binvenido a la CalculadoraV2");
 
 string numero;
-int  resultadoEntero;
+int resultadoEntero;
 double numeroReal, resultadoReal;
 
 Console.WriteLine("Ingrese un numero:");
@@ -27,6 +27,45 @@ resultadoReal = Math.Cos(numeroReal);
 Console.WriteLine("El COSENO del numero ingresado es: " + resultadoReal);
 resultadoEntero = (int)numeroReal;
 Console.WriteLine("La PARTE ENTERA de el numero ingresado es: " + resultadoEntero);
+
+double numero1, numero2;
+
+Console.WriteLine("Ingrese un numero:");
+do
+{
+    numero = Console.ReadLine();
+    double.TryParse(numero, out numero1);
+
+    if (!(double.TryParse(numero, out numero1)))
+    {
+        Console.WriteLine("Por favor, ingrese un numero valido");
+    }  
+} while (!(double.TryParse(numero, out numero1)));
+Console.WriteLine("Ingrese otro numero:");
+do
+{
+    numero = Console.ReadLine();
+    double.TryParse(numero, out numero2);
+
+    if (!(double.TryParse(numero, out numero2)))
+    {
+        Console.WriteLine("Por favor, ingrese un numero valido");
+    }  
+} while (!(double.TryParse(numero, out numero2)));
+
+if (numero1 > numero2)
+{
+    Console.WriteLine("El maximo entre los numeros ingresados es: " + numero1 + " y el menor entre los numeros ingresados es " + numero2);
+}else
+{
+    if (numero1 < numero2)
+    {
+        Console.WriteLine("El maximo entre los numeros ingresados es: " + numero2 + " y el menor entre los numeros ingresados es: " + numero1);
+    }else
+    {
+        Console.WriteLine("Los numeros ingresados son iguales.");
+    }
+}
 
 // do
 // {
