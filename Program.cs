@@ -43,11 +43,25 @@ do
             break;
         case 2:
             Console.WriteLine("Ingrese el primer numero:");
-            numero = Console.ReadLine();
-            int.TryParse(numero, out numero1);
+            do
+            {
+                numero = Console.ReadLine();
+                int.TryParse(numero, out numero1);
+                if (!(int.TryParse(numero, out numero1)))
+                {
+                    Console.WriteLine("No se ingreso un numero, por favor intente nuevamente.");
+                }
+            } while (!(int.TryParse(numero, out numero1)));
             Console.WriteLine("Ingrese el segundo numero:");
-            numero = Console.ReadLine();
-            int.TryParse(numero, out numero2);
+            do
+            {
+                numero = Console.ReadLine();
+                int.TryParse(numero, out numero2);
+                if (!(int.TryParse(numero, out numero2)))
+                {
+                    Console.WriteLine("No se ingreso un numero, por favor intente nuevamente.");
+                }
+            } while (!(int.TryParse(numero, out numero2)));
             if (numero1 < numero2)
             {
                 Console.WriteLine("El primer numero es menor que el segundo, no es posible realizar la operacion RESTA");
@@ -59,19 +73,49 @@ do
             break;
         case 3:
             Console.WriteLine("Ingrese el primer numero:");
-            numero = Console.ReadLine();
-            int.TryParse(numero, out numero1);
+            do
+            {
+                numero = Console.ReadLine();
+                int.TryParse(numero, out numero1);
+                if (!(int.TryParse(numero, out numero1)))
+                {
+                    Console.WriteLine("No se ingreso un numero, por favor intente nuevamente.");
+                }
+            } while (!(int.TryParse(numero, out numero1)));
             Console.WriteLine("Ingrese el segundo numero:");
-            numero = Console.ReadLine();
-            int.TryParse(numero, out numero2);            
+            do
+            {
+                numero = Console.ReadLine();
+                int.TryParse(numero, out numero2);
+                if (!(int.TryParse(numero, out numero2)))
+                {
+                    Console.WriteLine("No se ingreso un numero, por favor intente nuevamente.");
+                }
+            } while (!(int.TryParse(numero, out numero2)));
+            resultado = numero1 * numero2;
+            Console.WriteLine("El resultado es: " + resultado);
             break;
         case 4:
             Console.WriteLine("Ingrese el primer numero:");
-            numero = Console.ReadLine();
-            int.TryParse(numero, out numero1);
+            do
+            {
+                numero = Console.ReadLine();
+                int.TryParse(numero, out numero1);
+                if (!(int.TryParse(numero, out numero1)))
+                {
+                    Console.WriteLine("No se ingreso un numero, por favor intente nuevamente.");
+                }
+            } while (!(int.TryParse(numero, out numero1)));
             Console.WriteLine("Ingrese el segundo numero:");
-            numero = Console.ReadLine();
-            int.TryParse(numero, out numero2);
+            do
+            {
+                numero = Console.ReadLine();
+                int.TryParse(numero, out numero2);
+                if (!(int.TryParse(numero, out numero2)))
+                {
+                    Console.WriteLine("No se ingreso un numero, por favor intente nuevamente.");
+                }
+            } while (!(int.TryParse(numero, out numero2)));
             if (numero1 < numero2)
             {
                 Console.WriteLine("El primer numero es menor que el segundo numero, no es posible realizar la operacion DIVICION.");
