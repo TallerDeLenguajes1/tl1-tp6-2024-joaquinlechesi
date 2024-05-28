@@ -60,7 +60,7 @@ if (numero1 > numero2)
 {
     if (numero1 < numero2)
     {
-        Console.WriteLine("El maximo entre los numeros ingresados es: " + numero2 + " y el menor entre los numeros ingresados es: " + numero1);
+        Console.WriteLine("El maximo entre los numeros ingresados es: " + numero2 + " y el minimo entre los numeros ingresados es: " + numero1);
     }else
     {
         Console.WriteLine("Los numeros ingresados son iguales.");
