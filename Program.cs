@@ -19,11 +19,25 @@ do
     {
         case 1:
             Console.WriteLine("Ingrese el primer numero:");
-            numero = Console.ReadLine();
-            int.TryParse(numero, out numero1);
+            do
+            {
+                numero = Console.ReadLine();
+                int.TryParse(numero, out numero1);
+                if (!(int.TryParse(numero, out numero1)))
+                {
+                    Console.WriteLine("No se ingreso un numero, por favor intente nuevamente.");
+                }
+            } while (!(int.TryParse(numero, out numero1)));
             Console.WriteLine("Ingrese el segundo numero:");
-            numero = Console.ReadLine();
-            int.TryParse(numero, out numero2);
+            do
+            {
+                numero = Console.ReadLine();
+                int.TryParse(numero, out numero2);
+                if (!(int.TryParse(numero, out numero2)))
+                {
+                    Console.WriteLine("No se ingreso un numero, por favor intente nuevamente.");
+                }
+            } while (!(int.TryParse(numero, out numero2)));
             resultado = numero1 + numero2;
             Console.WriteLine("El resultado es: " + resultado);
             break;
@@ -73,6 +87,13 @@ do
             break;
     }
     Console.WriteLine("Desea realizar otra operacion? Ingrese 0 para NO, 1 para SI");
-    opcion = Console.ReadLine();
-    int.TryParse(opcion, out opcionNumerica);
+    do
+    {
+        opcion = Console.ReadLine();
+        int.TryParse(opcion, out opcionNumerica);
+        if (!(int.TryParse(opcion, out opcionNumerica)))
+        {
+            Console.WriteLine("Ingreso un numero/caracter distinto a 0 o 1, por favor intente nuevamente\nDesea realizar otra operacion? Ingrese 0 para NO, 1 para SI");
+        }
+    } while (!(int.TryParse(opcion, out opcionNumerica)));
 } while (opcionNumerica != 0);
