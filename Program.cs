@@ -1,14 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Binvenido a la CalculadoraV2");
 
-string numero;
+string numeroString;
 int resultadoEntero;
 double numeroReal, resultadoReal;
 
 Console.WriteLine("Ingrese un numero:");
-numero = Console.ReadLine();
+numeroString = Console.ReadLine();
 //int.TryParse(numero, out numeroInt);
-double.TryParse(numero, out numeroReal);
+double.TryParse(numeroString, out numeroReal);
 resultadoReal = Math.Abs(numeroReal);
 Console.WriteLine("El VALOR ABSOLUTO del numero ingresado es: " + resultadoReal);
 resultadoReal = numeroReal * numeroReal;
@@ -33,25 +33,25 @@ double numero1, numero2;
 Console.WriteLine("Ingrese un numero:");
 do
 {
-    numero = Console.ReadLine();
-    double.TryParse(numero, out numero1);
+    numeroString = Console.ReadLine();
+    double.TryParse(numeroString, out numero1);
 
-    if (!(double.TryParse(numero, out numero1)))
+    if (!(double.TryParse(numeroString, out numero1)))
     {
         Console.WriteLine("Por favor, ingrese un numero valido");
     }  
-} while (!(double.TryParse(numero, out numero1)));
+} while (!(double.TryParse(numeroString, out numero1)));
 Console.WriteLine("Ingrese otro numero:");
 do
 {
-    numero = Console.ReadLine();
-    double.TryParse(numero, out numero2);
+    numeroString = Console.ReadLine();
+    double.TryParse(numeroString, out numero2);
 
-    if (!(double.TryParse(numero, out numero2)))
+    if (!(double.TryParse(numeroString, out numero2)))
     {
         Console.WriteLine("Por favor, ingrese un numero valido");
     }  
-} while (!(double.TryParse(numero, out numero2)));
+} while (!(double.TryParse(numeroString, out numero2)));
 
 if (numero1 > numero2)
 {
