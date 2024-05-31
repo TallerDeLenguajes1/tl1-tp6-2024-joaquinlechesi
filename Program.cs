@@ -28,39 +28,39 @@ Console.WriteLine("El COSENO del numero ingresado es: " + resultadoReal);
 resultadoEntero = (int)numeroReal;
 Console.WriteLine("La PARTE ENTERA de el numero ingresado es: " + resultadoEntero);
 
-double numero1, numero2;
+double primerNumero, segundoNumero;
 
 Console.WriteLine("Ingrese un numero:");
 do
 {
     numeroString = Console.ReadLine();
-    double.TryParse(numeroString, out numero1);
+    double.TryParse(numeroString, out primerNumero);
 
-    if (!(double.TryParse(numeroString, out numero1)))
+    if (!(double.TryParse(numeroString, out primerNumero)))
     {
         Console.WriteLine("Por favor, ingrese un numero valido");
     }  
-} while (!(double.TryParse(numeroString, out numero1)));
+} while (!(double.TryParse(numeroString, out primerNumero)));
 Console.WriteLine("Ingrese otro numero:");
 do
 {
     numeroString = Console.ReadLine();
-    double.TryParse(numeroString, out numero2);
+    double.TryParse(numeroString, out segundoNumero);
 
-    if (!(double.TryParse(numeroString, out numero2)))
+    if (!(double.TryParse(numeroString, out segundoNumero)))
     {
         Console.WriteLine("Por favor, ingrese un numero valido");
     }  
-} while (!(double.TryParse(numeroString, out numero2)));
+} while (!(double.TryParse(numeroString, out segundoNumero)));
 
-if (numero1 > numero2)
+if (primerNumero > segundoNumero)
 {
-    Console.WriteLine("El maximo entre los numeros ingresados es: " + numero1 + " y el menor entre los numeros ingresados es " + numero2);
+    Console.WriteLine("El maximo entre los numeros ingresados es: " + primerNumero + " y el menor entre los numeros ingresados es " + segundoNumero);
 }else
 {
-    if (numero1 < numero2)
+    if (primerNumero < segundoNumero)
     {
-        Console.WriteLine("El maximo entre los numeros ingresados es: " + numero2 + " y el minimo entre los numeros ingresados es: " + numero1);
+        Console.WriteLine("El maximo entre los numeros ingresados es: " + segundoNumero + " y el minimo entre los numeros ingresados es: " + primerNumero);
     }else
     {
         Console.WriteLine("Los numeros ingresados son iguales.");
