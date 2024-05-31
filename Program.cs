@@ -1,8 +1,25 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Ejercicio 4");
+Console.WriteLine("Bienvenido al Ejercicio 4\nPor favor ingrese un cadena de texto:");
 
+string cadena;
 
+cadena = Console.ReadLine();
 
+int longitudCadena;
+
+longitudCadena = cadena.Length;
+
+Console.WriteLine("La longitud de la consola ingresada es: " + longitudCadena);
+
+Console.WriteLine("Ingrese una segunda cadena de texto");
+
+string cadena2;
+
+cadena2 = Console.ReadLine();
+
+string cadena3 = cadena + cadena2;
+
+Console.WriteLine("La cadena final resultado de concatenar las dos cadenas es: " + cadena3);
 
 
 // // See https://aka.ms/new-console-template for more information
