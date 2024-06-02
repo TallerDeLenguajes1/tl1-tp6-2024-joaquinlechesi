@@ -20,6 +20,40 @@ cadena2 = Console.ReadLine();
 string cadena3 = cadena + cadena2;
 
 Console.WriteLine("La cadena final resultado de concatenar las dos cadenas es: " + cadena3);
+string numero;
+int num1 = 0, num2 = 0, resultado = 0;
+Console.WriteLine("Ingrese el primer numero:");
+do
+{
+    numero = Console.ReadLine();
+    int.TryParse(numero, out num1);
+    if (!(int.TryParse(numero, out num1)))
+    {
+        Console.WriteLine("No se ingreso un numero, por favor intente nuevamente.");
+    }
+} while (!(int.TryParse(numero, out num1)));
+Console.WriteLine("Ingrese el segundo numero:");
+do
+{
+    numero = Console.ReadLine();
+    int.TryParse(numero, out num2);
+    if (!(int.TryParse(numero, out num2)))
+    {
+        Console.WriteLine("No se ingreso un numero, por favor intente nuevamente.");
+    }
+} while (!(int.TryParse(numero, out num2)));
+resultado = num1 + num2;
+Console.WriteLine("El resultado de " + num1.ToString() + " y de " + num2.ToString() + " es igual a: " + resultado.ToString());
+
+Console.WriteLine("Ingrese una cadena de texto:");
+cadena = Console.ReadLine();
+foreach (var item in cadena)
+{
+    Console.WriteLine(item);
+}
+
+int ocurrencia;
+string cadenaDeOcurrencia;
 
 
 // // See https://aka.ms/new-console-template for more information
@@ -37,33 +71,9 @@ Console.WriteLine("La cadena final resultado de concatenar las dos cadenas es: "
 //     Console.WriteLine("Seleccione un operacion de la calculadora:\n1 para la operacion SUMA\n2 para la operacion RESTA\n3 para la operacion MULTIPLICACION\n4 para la operacion DIVISION");
 //     opcion = Console.ReadLine();
 //     int.TryParse(opcion, out opcionNumerica);
-//     string numero;
-//     int numero1 = 0, numero2 = 0, resultado = 0;
 //     switch (opcionNumerica)
 //     {
 //         case 1:
-//             Console.WriteLine("Ingrese el primer numero:");
-//             do
-//             {
-//                 numero = Console.ReadLine();
-//                 int.TryParse(numero, out numero1);
-//                 if (!(int.TryParse(numero, out numero1)))
-//                 {
-//                     Console.WriteLine("No se ingreso un numero, por favor intente nuevamente.");
-//                 }
-//             } while (!(int.TryParse(numero, out numero1)));
-//             Console.WriteLine("Ingrese el segundo numero:");
-//             do
-//             {
-//                 numero = Console.ReadLine();
-//                 int.TryParse(numero, out numero2);
-//                 if (!(int.TryParse(numero, out numero2)))
-//                 {
-//                     Console.WriteLine("No se ingreso un numero, por favor intente nuevamente.");
-//                 }
-//             } while (!(int.TryParse(numero, out numero2)));
-//             resultado = numero1 + numero2;
-//             Console.WriteLine("El resultado es: " + resultado);
 //             break;
 //         case 2:
 //             Console.WriteLine("Ingrese el primer numero:");
