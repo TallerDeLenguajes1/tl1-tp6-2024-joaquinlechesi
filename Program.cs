@@ -1,4 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System;
+using System.ComponentModel;
+
 Console.WriteLine("Bienvenido al Ejercicio 4\nPor favor ingrese un cadena de texto:");
 
 string cadena;
@@ -52,9 +55,24 @@ foreach (var item in cadena)
     Console.WriteLine(item);
 }
 
-int ocurrencia;
+bool ocurrencia;
 string cadenaDeOcurrencia;
+Console.WriteLine("Ingrese una cadena de texto:");
+cadena = Console.ReadLine();
+Console.WriteLine("Ingrese la cadena a buscar dentro de la cadena de texto previamente ingresada:");
+cadenaDeOcurrencia = Console.ReadLine();
 
+if (ocurrencia = cadena.Contains(cadenaDeOcurrencia))
+{
+    Console.WriteLine("La cadena ingresada SI se encuentra dentro de la otra cadena.");
+}else
+{
+    Console.WriteLine("La cadena ingresada NO se encuentra dentro de la otra cadena.");
+}
+
+Console.WriteLine("Ingrese la cadena a convertir en una cadena en MAYUSCULAS.");
+cadena = Console.ReadLine();
+Console.WriteLine("La cadena en MAYUSUCULAS ES:\n" + cadena.ToUpper() + "\nLa cadena en minusculas es:\n" + cadena.ToLower());
 
 // // See https://aka.ms/new-console-template for more information
 // using System.Security;
