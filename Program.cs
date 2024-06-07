@@ -85,6 +85,62 @@ foreach (var item in matrizCadena)
     Console.WriteLine(item);
 }
 
+Console.WriteLine("Ingrese el calculo que desea realizar, por ejemplo: 528+2 (recuerde usar el simbolo / para la division y el simbolo * para lamultiplicacion)");
+cadena = Console.ReadLine();
+string operacion = "0";
+do
+{    
+    if (cadena.Contains("+"))
+    {
+        matrizCadena = cadena.Split("+");
+        operacion = "+";
+    }else
+    {
+        if (cadena.Contains("-"))
+        {
+            matrizCadena = cadena.Split("-");
+            operacion = "-";
+        }else
+        {
+            if (cadena.Contains("*"))
+            {
+                matrizCadena = cadena.Split("*");
+                operacion = "*";
+            }else
+            {
+                if (cadena.Contains("/"))
+                {
+                    matrizCadena = cadena.Split("/");
+                    operacion = "/";
+                }else
+                {
+                    Console.WriteLine("No se pudo indentificar la operacion, intente nuevamente.");
+                }
+            }
+        }
+    }
+    if (cadena.Contains("+") || cadena.Contains("-") || cadena.Contains("*") || cadena.Contains("/"))
+    {
+        int.TryParse(matrizCadena[0], out num1);
+        int.TryParse(matrizCadena[1], out num2);
+        switch (operacion)
+        {
+            case "+":
+            resultado = num1 + num2;
+                break;
+            case "-":
+            resultado = num1 - num2;
+                break;
+            case "*":
+            resultado = num1 * num2;
+                break;
+            
+            default:
+                break;
+        }
+    }
+} while (!(cadena.Contains("+") || cadena.Contains("-") || cadena.Contains("*") || cadena.Contains("/")));
+
 // // See https://aka.ms/new-console-template for more information
 // using System.Security;
 
