@@ -74,6 +74,17 @@ Console.WriteLine("Ingrese la cadena a convertir en una cadena en MAYUSCULAS.");
 cadena = Console.ReadLine();
 Console.WriteLine("La cadena en MAYUSUCULAS ES:\n" + cadena.ToUpper() + "\nLa cadena en minusculas es:\n" + cadena.ToLower());
 
+Console.WriteLine("Ingrese una cadena de texto nuevamente:");
+cadena = Console.ReadLine();
+string separador = " ";
+string[] matrizCadena; //definir una matriz
+matrizCadena = cadena.Split(separador);
+Console.WriteLine("Los resultados de separar la cadena son:");
+foreach (var item in matrizCadena)
+{
+    Console.WriteLine(item);
+}
+
 // // See https://aka.ms/new-console-template for more information
 // using System.Security;
 

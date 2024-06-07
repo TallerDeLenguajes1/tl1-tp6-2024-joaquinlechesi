@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\joaqu\\.nuget\\packages\\": {}
+    "C:\\Users\\Joaquin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joaqu\\Documents\\Taller I\\06_Semana 6\\tl1-tp6-2024-joaquinlechesi\\tl1-tp6-2024-joaquinlechesi.csproj",
+      "projectUniqueName": "D:\\Usuarios\\Joaquin\\Documents\\Taller_de_Lenguajes_I\\06_Semana 6\\tl1-tp6-2024-joaquinlechesi\\tl1-tp6-2024-joaquinlechesi.csproj",
       "projectName": "tl1-tp6-2024-joaquinlechesi",
-      "projectPath": "C:\\Users\\joaqu\\Documents\\Taller I\\06_Semana 6\\tl1-tp6-2024-joaquinlechesi\\tl1-tp6-2024-joaquinlechesi.csproj",
-      "packagesPath": "C:\\Users\\joaqu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joaqu\\Documents\\Taller I\\06_Semana 6\\tl1-tp6-2024-joaquinlechesi\\obj\\",
+      "projectPath": "D:\\Usuarios\\Joaquin\\Documents\\Taller_de_Lenguajes_I\\06_Semana 6\\tl1-tp6-2024-joaquinlechesi\\tl1-tp6-2024-joaquinlechesi.csproj",
+      "packagesPath": "C:\\Users\\Joaquin\\.nuget\\packages\\",
+      "outputPath": "D:\\Usuarios\\Joaquin\\Documents\\Taller_de_Lenguajes_I\\06_Semana 6\\tl1-tp6-2024-joaquinlechesi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\joaqu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Joaquin\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
