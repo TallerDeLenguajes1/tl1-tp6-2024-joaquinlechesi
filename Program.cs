@@ -46,7 +46,7 @@ do
     }
 } while (!(int.TryParse(numero, out num2)));
 resultado = num1 + num2;
-Console.WriteLine("El resultado de " + num1.ToString() + " y de " + num2.ToString() + " es igual a: " + resultado.ToString());
+Console.WriteLine("El resultado de sumar " + num1.ToString() + " y de " + num2.ToString() + " es igual a: " + resultado.ToString());
 
 Console.WriteLine("Ingrese una cadena de texto:");
 cadena = Console.ReadLine();
@@ -119,7 +119,7 @@ do
             }
         }
     }
-    if (cadena.Contains("+") || cadena.Contains("-") || cadena.Contains("*") || cadena.Contains("/"))
+    if (cadena.Contains("+") || cadena.Contains("-") || cadena.Contains("*"))
     {
         int.TryParse(matrizCadena[0], out num1);
         int.TryParse(matrizCadena[1], out num2);
@@ -134,9 +134,17 @@ do
             case "*":
             resultado = num1 * num2;
                 break;
-            
-            default:
-                break;
+        }
+        Console.WriteLine("El resultado de la operacion seleccionada es: " + resultado);
+    }else
+    {
+        if (cadena.Contains("/"))
+        {
+            int.TryParse(matrizCadena[0], out num1);
+            int.TryParse(matrizCadena[1], out num2);      
+            double resultadoFloat;
+            resultadoFloat = (double)num1 / num2;
+            Console.WriteLine("El resultado de la operacion seleccionada es: " + resultadoFloat);
         }
     }
 } while (!(cadena.Contains("+") || cadena.Contains("-") || cadena.Contains("*") || cadena.Contains("/")));
